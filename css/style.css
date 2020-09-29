@@ -2,41 +2,97 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 7px;
+  
 }
 h1 {
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 175%
+  
 }
 
+body {
+	
+    background-color: white;
+   
+  }
+
+
 p {
+  margin-right: 0;
+  margin-top: 0;
+  font-family: Helvetica;
+  color: black;
   border: 1px solid black;
-  width: 90%;
-  height: 150px;
+  font-size: 125%;
+  overflow: auto;
+
+}
+
+#p11 {
+  background-color: #BDB76B;
+  float: right;
+  width: 36%;
+  text-align: center;
+  font-weight: bold;
+
+}
+#p12 {
+  background-color: #FF4500;
+  float: right;
+  width: 36%;
+  text-align: center;
+  font-weight: bold;
+
+}
+#p13 {
+  background-color: #FFD700;
+  float: right;
+  width: 36%;
+  text-align: center;
+  font-weight: bold;
+
+}
+#p2 {
+   
+  width: 100%;
+  height: 130px;
+  border: 0px ;
   margin-right: auto;
   margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+  padding: 10px;
+  font-size: 100%;
+  
+ 
+
 }
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
+  position: relative;
 }
 
 /********** desktop devices  **********/
 @media  (min-width:  992px ) {
 	.col-lg-1, .col-lg-2, .col-lg-3 {
     float: left;
-    border: 1px solid red;
-  }
+    border: 1px solid black;
+    background-color: #FF8C00;
+
+   }
   .col-lg-1 {
-    width: 33.33%;
+    width: 31.882%;
   }
   .col-lg-2 {
-    width: 33.33%;
+    width: 31.882%;
   }
   .col-lg-3 {
-    width: 33.33%;
+    width: 31.882%;
   }
+  
 }
 
 
@@ -44,40 +100,45 @@ p {
 @media  (min-width: 768px) and (max-width: 991px ) {
 	.col-md-1, .col-md-2, .col-md-3 {
     float: left;
-    border: 1px solid green;
+    border: 1px solid black;
+    background-color: #9932CC;
   }
   .col-md-1 {
-    width: 33.33%;
+    width: 48%;
   }
   .col-md-2 {
-    width: 33.33%;
+    width: 48%;
   }
   .col-md-3 {
-    width: 33.33%;
+  	clear: both;
+  	width: 98%;
   }
-  body {
-    background-color: green;
-  }
+  
 }
 
 /********** mobile devices  **********/
 @media  (max-width:  767px ) {
-		.col-sm-1, .col-sm-2, .col-sm-3 {
+	.col-sm-1, .col-sm-2, .col-sm-3 {
     float: left;
-    border: 1px solid orange;
+    border: 1px solid black;
+    background-color: 	#00FFFF;
+
+
   }
   .col-sm-1 {
-    width: 33.33%;
+    width: 95%;
   }
   .col-sm-2 {
-    width: 33.33%;
+    width: 95%;
   }
   .col-sm-3 {
-    width: 33.33%;
+  	 width: 95%;
+
   }
-  body {
-    background-color: blue;
-  }
+  
 }
+
+
+
 
 
